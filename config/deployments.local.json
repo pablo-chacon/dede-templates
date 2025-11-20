@@ -1,0 +1,6 @@
+{
+  "parcelCore": "0x123...",
+  "escrow": "0x456...",
+  "signerRegistry": "0x789...",
+  "chainId": 31337
+}
