@@ -39,7 +39,7 @@ This repository provides:
 This repo intentionally **does not** contain Solidity code.
 All smart contracts live in the canonical on-chain repo:
 
-👉 **[https://github.com/pablo-chacon/dede-protocol](https://github.com/pablo-chacon/dede-protocol)**
+**[https://github.com/pablo-chacon/dede-protocol](https://github.com/pablo-chacon/dede-protocol)**
 
 ---
 
