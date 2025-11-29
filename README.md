@@ -58,6 +58,8 @@ Official DeDe Protocol contract addresses:
 
 [multi-currency.md](https://github.com/pablo-chacon/dede-templates/blob/main/integration/multi-currency.md) 
 
+---
+
 # **Repository Structure**
 
 ```
