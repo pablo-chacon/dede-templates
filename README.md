@@ -54,22 +54,29 @@ Official DeDe Protocol contract addresses:
 
 ---
 
+## **Multi-Currency Integration**
+
+
 # **Repository Structure**
 
 ```
 dede-templates/
-├── config/
+.
+├── config
 │   └── deployments.local.json
-├── examples/
+├── examples
 │   └── deploy-local.sh
-├── infra/
+├── infra
 │   ├── docker-compose.yml
-│   └── sql/
+│   └── sql
 │       └── init.sql
-├── market-indexer/
+├── integration
+│   └── multi-currency.md
+├── market-indexer
 │   ├── Dockerfile
 │   ├── package.json
-│   ├── src/
+│   ├── package-lock.json
+│   ├── src
 │   │   ├── app.ts
 │   │   ├── chain.ts
 │   │   ├── db.ts
