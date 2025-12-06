@@ -54,9 +54,13 @@ Official DeDe Protocol contract addresses:
 
 ---
 
-## **Multi-Currency Integration**
+## **Multi-Currency Integration (DeFi/CeFi)**
 
-[multi-currency.md](https://github.com/pablo-chacon/dede-templates/blob/main/integration/multi-currency.md) 
+
+**[DeDe Multi-Currency DeFI Integration](https://github.com/pablo-chacon/dede-templates/blob/main/integration/multi-currency.md)** 
+
+
+**[DeDe Multi-Currency CeFi Integration](https://github.com/pablo-chacon/dede-templates/blob/main/integration/multi-currency-cefi.md)**
 
 ---
 
