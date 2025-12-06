@@ -26,7 +26,11 @@ The authors are not liable for any damages, losses, claims, or other issues aris
 
 By cloning, modifying, deploying, or interacting with this repository in any capacity, you agree that you alone are responsible for ensuring legal compliance, operational safety, and all outcomes of your integration.
 
-**Minimal, quick starter kit for building apps on top of the DeDe Protocol.**
+**[DeDe-Protocol Whitepaper](https://github.com/pablo-chacon/dede-protocol/blob/main/WHITEPAPER.md)**
+
+---
+
+## **Minimal, quick starter kit for building apps on top of the DeDe Protocol.**
 
 This repository provides:
 
@@ -39,7 +43,7 @@ This repository provides:
 This repo intentionally **does not** contain Solidity code.
 All smart contracts live in the canonical on-chain repo:
 
-**[https://github.com/pablo-chacon/dede-protocol](https://github.com/pablo-chacon/dede-protocol)**
+**[DeDe-Protocol Repository](https://github.com/pablo-chacon/dede-protocol)**
 
 ---
 
