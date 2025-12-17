@@ -58,6 +58,25 @@ Official DeDe Protocol contract addresses:
 
 ---
 
+## **Suggested Platform Fee**
+
+DeDe-Protocol **Autofinalize transaction 72 h from pickup** unless disputed or canceled. This is to ensure carriers is motivated 
+to make **fast deliveries**, and keep DeDe Protocol **trustless** 
+Author of DeDe Protocol want the platforms to encourge quick deliveries by utilize the **Platform Fee**. 
+Suggested **dynamic Platform Fee** range is 3% =< 22% of parcel value to **platformTreasury** set by delivery time.
+
+This is only a **suggestion** to ensure fair fast deliveries.      
+
+---
+
+## **Additional suggestions**
+
+It is **encouraged** with a **antiscammer** community, **carrier rating**, and **carrier avarage delivery time** data. 
+**Platform** decide if or how to implement this funtionality. 
+DeDe Protocol Author has no responsibility, or control of the **antiscam**, **Platform Fee's** or other **policies**.  
+
+---
+
 ## **Multi-Currency Integration (DeFi/CeFi)**
 
 
