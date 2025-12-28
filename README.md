@@ -9,20 +9,20 @@ This repository contains general-purpose developer templates, examples, infrastr
 
 The authors and contributors:
 
-do not operate any delivery service, marketplace, or logistics business built using this template
+**do not** operate any delivery service, marketplace, or logistics business built using this template
 
-do not verify, supervise, or monitor users, carriers, platforms, or any third-party systems
+**do not** verify, supervise, or monitor users, carriers, platforms, or any third-party systems
 
-do not provide legal, financial, tax, compliance, or regulatory advice
+**do not** provide legal, financial, tax, compliance, or regulatory advice
 
-are not responsible for deployments, integrations, business decisions, or real-world usage of any application built using this repository
+**are not responsible for deployments**, integrations, business decisions, or real-world usage of any application built using this repository
 
-do not guarantee correctness, uptime, safety, or suitability for any purpose
+**do not** guarantee correctness, uptime, safety, or suitability for any purpose
 
 All usage of this repository—including running the included infrastructure, deploying the protocol, or integrating DeDe into any service—is performed entirely at the risk of the user.
 
-This software is offered strictly as-is, without any warranties, express or implied.
-The authors are not liable for any damages, losses, claims, or other issues arising from the use, misuse, failure, or operation of this software or any derivative work.
+This **software is offered strictly as-is**, without any warranties, express or implied.
+The **authors are not liable** for any damages, losses, claims, or other issues arising from the use, misuse, failure, or operation of this software or any derivative work.
 
 By cloning, modifying, deploying, or interacting with this repository in any capacity, you agree that you alone are responsible for ensuring legal compliance, operational safety, and all outcomes of your integration.
 
@@ -30,7 +30,7 @@ By cloning, modifying, deploying, or interacting with this repository in any cap
 
 ---
 
-## **Minimal, quick starter kit for building apps on top of the DeDe Protocol.**
+## Minimal, quick starter kit for building apps on top of the DeDe Protocol.
 
 This repository provides:
 
@@ -47,9 +47,9 @@ All smart contracts live in the canonical on-chain repo:
 
 ---
 
-## **Etherum Mainnet Deployment**
+## Ethereum Mainnet Deployment
 
-Official DeDe Protocol contract addresses:
+**Canonical DeDe Protocol contract addresses (Ethereum mainnet)**:
 
 * **ParcelCore:** 0xeF1D4970c3B988840B13761Ec4FBb85106d789F8
 * **Escrow:** 0x834317eFB2E6eE362a63474837398086cC302934
@@ -58,26 +58,28 @@ Official DeDe Protocol contract addresses:
 
 ---
 
-## **Suggested Platform Fee**
+## Suggested Platform Fee
 
-DeDe-Protocol **Autofinalize transaction 72 h from pickup** unless disputed or canceled. This is to ensure carriers is motivated 
-to make **fast deliveries**, and keep DeDe Protocol **trustless** 
-Author of DeDe Protocol want the platforms to encourge quick deliveries by utilize the **Platform Fee**. 
-Suggested **dynamic Platform Fee** range is 3% =< 22% of parcel value to **platformTreasury** set by delivery time.
+DeDe-Protocol **auto-finalizes transaction 72 hours after pickup** unless disputed or canceled. 
+This is to ensure carriers are motivated to make **fast deliveries**, and keep DeDe Protocol **trustless**. 
 
-This is only a **suggestion** to ensure fair fast deliveries.      
+The DeDe Protocol author **suggests** that platforms may encourage faster deliveries by utilizing the Platform Fee mechanism. 
+**Suggested dynamic Platform fee** range is 3%-22% of parcel value to **platformTreasury** set by delivery time.
 
----
-
-## **Additional suggestions**
-
-It is **encouraged** with a **antiscammer** community, **carrier rating**, and **carrier avarage delivery time** data. 
-**Platform** decide if or how to implement this funtionality. 
-DeDe Protocol Author has no responsibility, or control of the **antiscam**, **Platform Fee's** or other **policies**.  
+This is only a **suggestion** to encourage fair fast deliveries.      
 
 ---
 
-## **Multi-Currency Integration (DeFi/CeFi)**
+## Additional suggestions
+
+It is **encouraged** to have an **anti-scam** community, **carrier rating**, and **carrier average delivery time** data. 
+**Platforms** decide if or how to implement this functionality. 
+
+The DeDe Protocol author has no responsibility for, or control over, **anti-scam measures, platform fees**, or other **policies**.
+
+---
+
+## Multi-Currency Integration (DeFi/CeFi)
 
 
 **[DeDe Multi-Currency DeFI Integration](https://github.com/pablo-chacon/dede-templates/blob/main/integration/multi-currency.md)** 
@@ -87,7 +89,7 @@ DeDe Protocol Author has no responsibility, or control of the **antiscam**, **Pl
 
 ---
 
-# **Repository Structure**
+## Repository Structure
 
 ```
 dede-templates/
@@ -117,7 +119,7 @@ dede-templates/
 
 ---
 
-# **Prerequisites**
+## Prerequisites
 
 * Node.js ≥ 18
 * Docker & Docker Compose
@@ -126,7 +128,7 @@ dede-templates/
 
 ---
 
-# **1. Deploying DeDe Protocol Locally (Anvil)**
+## 1. Deploying DeDe Protocol Locally (Anvil)
 
 This repo expects that you deploy the on-chain DeDe Protocol locally and store the resulting contract addresses inside `config/deployments.local.json`.
 
@@ -159,11 +161,38 @@ Example output of that file:
 }
 ```
 
+### 1.1 Optional: Use Canonical DeDe Mainnet Deployment
+
+If you want to **integrate directly** against the canonical DeDe Protocol
+deployment on Ethereum mainnet, you can skip local deployment and
+configure the templates to **point at the canonical on-chain contracts**.
+
+This is purely a convenience option. The templates remain generic and
+can be used with any DeDe-compatible deployment.
+
+**Canonical Ethereum Mainnet (chainId: 1) Addresses**:
+
+* **ParcelCore**: **0xeF1D4970c3B988840B13761Ec4FBb85106d789F8** 
+* **Escrow**: **0x834317eFB2E6eE362a63474837398086cC302934**
+* **AStarSignerRegistryStaked**: **0x311A4c3Ed79D4467C55dd7CEE0C731501DF3f161**
+* **Protocol Treasury**: **0x9C34d6a6BF1257A9e36758583cDC36F4cE2fA78F**
+
+These contracts are immutable and permissionless.
+Using these **addresses does not imply any** affiliation, approval,
+or governance relationship with the protocol authors.
+
+When using the mainnet deployment, the **indexer must be configured**
+with the canonical contract addresses. One simple approach is to
+replace `deployments.local.json` with a manually created config file
+containing the official addresses.
+
 ---
 
 # **2. Start the Template Stack**
 
 ### Run everything:
+
+When using mainnet, ensure deployments.local.json contains the canonical addresses or adjust your configuration source accordingly.
 
 ```bash
 cd infra
