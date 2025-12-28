@@ -63,6 +63,9 @@ All smart contracts live in the canonical on-chain repo:
 DeDe-Protocol **auto-finalizes transaction 72 hours after pickup** unless disputed or canceled. 
 This is to ensure carriers are motivated to make **fast deliveries**, and keep DeDe Protocol **trustless**. 
 
+DeDe supports arbitrarily small escrow amounts at the protocol level. 
+However, integrators are **expected** to **enforce** minimum parcel values appropriate to **gas costs** and **token precision**.
+
 The DeDe Protocol author **suggests** that platforms may encourage faster deliveries by utilizing the Platform Fee mechanism. 
 **Suggested dynamic Platform fee** range is 3%-22% of parcel value to **platformTreasury** set by delivery time.
 
