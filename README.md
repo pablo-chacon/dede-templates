@@ -188,7 +188,7 @@ containing the official addresses.
 
 ---
 
-# **2. Start the Template Stack**
+## **2. Start the Template Stack**
 
 ### Run everything:
 
@@ -208,7 +208,7 @@ This launches:
 
 ---
 
-# **3. Using the Market Indexer**
+## **3. Using the Market Indexer**
 
 Once the stack is running:
 
@@ -226,7 +226,7 @@ curl http://localhost:8081/healthz
 
 ---
 
-# **4. How It Works**
+## **4. How It Works**
 
 ### `market-indexer/src/chain.ts`
 
@@ -264,7 +264,7 @@ Exposes the `/pickups` API endpoint.
 
 ---
 
-# **5. Customizing the Template**
+## **5. Customizing the Template**
 
 You can modify:
 
@@ -278,7 +278,7 @@ This repo is intentionally small and unopinionated so builders can adapt it quic
 
 ---
 
-# **6. Production Notes**
+## **6. Production Notes**
 
 * Replace hardcoded `"SE-AB"` and `"u6q4y"` with real geospatial logic
 * Use a real RPC instead of Anvil
@@ -289,7 +289,7 @@ This repo is intentionally small and unopinionated so builders can adapt it quic
 
 ---
 
-# **7. Canonical Protocol Repository**
+## **7. Canonical Protocol Repository**
 
 All on-chain code, tests, and deployment scripts live here:
 
@@ -299,7 +299,7 @@ This template repo is purely for application developers integrating with DeDe.
 
 ---
 
-# **License**
+## **License**
 
 MIT License
 
