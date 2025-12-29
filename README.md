@@ -122,20 +122,32 @@ dede-templates/
 
 ---
 
-## Prerequisites
+## On-chain Deployment
+
+DeDe Protocol is deployed on Ethereum mainnet.
+
+
+ParcelCore (ERC-721):
+https://etherscan.io/token/0xeF1D4970c3B988840B13761Ec4FBb85106d789F8
+
+
+**The deployment is immutable and permissionless. No upgrades or governance actions are possible.**
+
+---
+
+## 1. Deploying DeDe Protocol Locally (Anvil)
+
+### Prerequisites
 
 * Node.js ≥ 18
 * Docker & Docker Compose
 * Foundry (for local contract deployment)
 * Git
 
----
-
-## 1. Deploying DeDe Protocol Locally (Anvil)
 
 This repo expects that you deploy the on-chain DeDe Protocol locally and store the resulting contract addresses inside `config/deployments.local.json`.
 
-You can use the included helper script:
+You can use the **included helper script**:
 
 ```bash
 cd examples
